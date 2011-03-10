@@ -467,7 +467,7 @@ Value settxfee(const Array& params, bool fHelp)
     int64 nAmount = AmountFromValue(params[0]);
 
     // safety range
-    if (nAmount > (5 * COIN))
+    if (!ValidFee(nAmount))
         return false;
 
     static CCriticalSection cs;

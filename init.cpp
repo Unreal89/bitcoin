@@ -434,7 +434,8 @@ bool AppInit2(int argc, char* argv[])
 
     if (mapArgs.count("-paytxfee"))
     {
-        if (!ParseMoney(mapArgs["-paytxfee"], nTransactionFee))
+        if (!ParseMoney(mapArgs["-paytxfee"], nTransactionFee) ||
+	    !ValidFee(nTransactionFee))
         {
             wxMessageBox(_("Invalid amount for -paytxfee=<amount>"), "Bitcoin");
             return false;

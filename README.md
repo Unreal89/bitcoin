@@ -1,16 +1,36 @@
-Bitcoin integration/staging tree
+Bitcoin patched branch
+======================
 
-Development process
-===================
+This includes various third party branches which might not be of
+enough use to the average person to make it into mainline, or might
+just be of "beta" status.
 
-Developers work in their own trees, then submit pull requests when they think their feature or bug fix is ready.
+Patches
+=======
 
-If it is a simple/trivial/non-controversial change, then one of the bitcoin development team members simply pulls it.
+jgarzik's Patches
+-----------------
+xlisttransactions
+    Adds "xlisttransactions" RPC call.  This lists all wallet transactions, using logic similar to the GUI's display code.
 
-If it is a more complicated or potentially controversial change, then the patch submitter will be asked to start a discussion (if they haven't already) on the development forums:  http://www.bitcoin.org/smf/index.php?board=6.0
-The patch will be accepted if there is broad consensus that it is a good thing.  Developers should expect to rework and resubmit patches if they don't match the project's coding conventions (see coding.txt) or are controversial.
+getblockbycount
+    Adds "getblockbycount" RPC call.  This dumps the block on the main chain at the specified height, in its entirety.  All data fields, including all transactions, are dumped in a single JSON response.
 
-The master branch is regularly built and tested (by who? need people willing to be quality assurance testers), and periodically pushed to the subversion repo to become the official, stable, released bitcoin.
+dumpblock
+    A clone of "getblockbycount" RPC call.  Same behavior as "getblockbycount" -- dumps block at specified height.  Adds a "_fulldump" boolean to the output, indicating whether or not the entire block is present on disk (preparing for lightweight block chain support), hoping to address some objections of satoshi.
 
+settxfee
+    Add "settxfee" RPC call.  This permits changing of the 'paytxfee' variable at runtime.
 
-Feature branches are created when there are major new features being worked on by several people.
+print POW failures
+    Print a response for every work solution submitted to bitcoind.  Since we already logged successful proof-of-work solutions, the only thing remaining was to log when a proof-of-work check failed, which this patch does.
+
+Gavin Andresen's Patches
+------------------------
+Port Option
+    Adds the -port option to change the listening port.  Also remove the 2h limit on nodes which do not use the default port.
+
+My Patches (BlueMatt)
+---------------------
+UPnP
+    Adds UPnP support including a WXUI option to disable/enable it at runtime.

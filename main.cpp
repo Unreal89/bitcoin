@@ -3873,6 +3873,18 @@ bool SelectCoins(int64 nTargetValue, set<CWalletTx*>& setCoinsRet)
 
 
 
+bool ValidFee(int64 nAmount, bool fAllowZero)
+{
+    if (nAmount == 0 && fAllowZero)
+        return true;
+    if (nAmount < CENT)
+        return false;
+    if (nAmount > (5 * COIN))
+        return false;
+    
+    return true;
+}
+
 
 bool CreateTransaction(const vector<pair<CScript, int64> >& vecSend, CWalletTx& wtxNew, CReserveKey& reservekey, int64& nFeeRet)
 {

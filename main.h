@@ -93,7 +93,7 @@ void BitcoinMiner();
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 bool IsInitialBlockDownload();
 string GetWarnings(string strFor);
-
+bool ValidFee(int64 nAmount, bool fAllowZero = true);
 
 
 

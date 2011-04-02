@@ -5,6 +5,8 @@ This includes various third party branches which might not be of
 enough use to the average person to make it into mainline, or might
 just be of "beta" status.
 
+This version is built with USE_UPNP=1, making UPnP on by default.
+
 Patches
 =======
 
@@ -29,6 +31,11 @@ Gavin Andresen's Patches
 ------------------------
 Port Option
     Adds the -port option to change the listening port.  Also remove the 2h limit on nodes which do not use the default port.
+
+Sipa's Patches
+--------------
+Spent Per Tx Out
+    This patch changes some internal structures to keep track of spentness of each wallet transaction output separately, to support partially-spent transactions.
 
 My Patches (BlueMatt)
 ---------------------

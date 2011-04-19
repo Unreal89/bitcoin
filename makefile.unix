@@ -65,7 +65,7 @@ cryptopp/obj/%.o: cryptopp/%.cpp
 obj/sha256.o: sha256.cpp
 	$(CXX) -c $(CXXFLAGS) -msse2 -O3 -march=amdfam10 -o $@ $<
 
-bitcoin: $(OBJS) obj/ui.o obj/uibase.o obj/sha256.o
+bitcoin: $(OBJS) obj/ui.o obj/uibase.o obj/sha256.o obj/wxipcserver.o
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(WXLIBS) $(LIBS)
 
 

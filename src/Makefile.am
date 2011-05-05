@@ -17,14 +17,14 @@ bitcoin_SOURCES =  util.cpp script.cpp db.cpp net.cpp irc.cpp \
 			main.cpp rpc.cpp init.cpp
 bitcoin_CPPFLAGS = -Icryptopp $(HOST_CPPFLAGS) $(GUI_CPPFLAGS) -DGUI=1 -Iwx \
 	$(BOOST_CPPFLAGS) $(SSL_CPPFLAGS) $(CRYPTO_CPPFLAGS) $(GTHREAD2_CPPFLAGS) 
-bitcoin_LDADD = cryptopp/libcryptopp.la $(HOST_LIBS) \
-   $(COMMON_LIBS) \
+bitcoin_LDADD = cryptopp/libcryptopp.la $(COMMON_LIBS) \
    $(BOOST_LIBS) \
    $(SSL_LIBS) \
    $(CRYPTO_LIBS) \
    $(GTHREAD2_LIBS) \
    $(UPNP_LIBS) \
-   $(GUI_LIBS)
+   $(GUI_LIBS) \
+   $(HOST_LIBS)
 
 endif
 
@@ -34,11 +34,12 @@ bitcoind_SOURCES = util.cpp script.cpp db.cpp net.cpp irc.cpp \
 bitcoind_CPPFLAGS = -Icryptopp $(HOST_CPPFLAGS) \
 	$(BOOST_CPPFLAGS) $(SSL_CPPFLAGS) $(CRYPTO_CPPFLAGS) $(GTHREAD2_CPPFLAGS) 
 
-bitcoind_LDADD = cryptopp/libcryptopp.la $(HOST_LIBS) $(PROFILING_LIBS) \
+bitcoind_LDADD = cryptopp/libcryptopp.la $(PROFILING_LIBS) \
    $(COMMON_LIBS) \
    $(BOOST_LIBS) \
    $(SSL_LIBS) \
    $(CRYPTO_LIBS) \
    $(GTHREAD2_LIBS) \
-   $(UPNP_LIBS)
+   $(UPNP_LIBS) \
+   $(HOST_LIBS)
 

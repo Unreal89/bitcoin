@@ -91,7 +91,8 @@ case "$host_os" in
   *mingw*)
     have_mingw=yes
     AC_MSG_RESULT([MINGW cross compile])
-    HOST_CXXFLAGS="-DWIN32 -D__WXMSW__ -D_WINDOWS -DNOPCH"
+    HOST_CXXFLAGS="-DWIN32 -D__WXMSW__ -D_WINDOWS -DNOPCH -mwindows"
+    HOST_LIBS="-lkernel32 -luser32 -lgdi32 -lcomdlg32 -lwinspool -lwinmm -lshell32 -lcomctl32 -lole32 -loleaut32 -luuid -lrpcrt4 -ladvapi32 -lws2_32 -lshlwapi"
   ;;
 
   *)

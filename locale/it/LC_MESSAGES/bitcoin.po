@@ -4,9 +4,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-15 18:22+0100\n"
 "PO-Revision-Date: 2011-05-15 18:23+0100\n"
-"Last-Translator: Matt Corallo <matt@bluematt.me>\n"
+"Last-Translator: Federico Faggiano <federico.sk@katamail.com>\n"
 "Language-Team: \n"
-"Language: \n"
+"Language: Italian \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,12 +17,12 @@ msgstr ""
 #: ../../../src/net.cpp:1499
 #, c-format
 msgid "Unable to bind to port %d on this computer.  Bitcoin is probably already running."
-msgstr ""
+msgstr "Impossibile utilizzare la porta %d su questo computer.  Bitcoin probabilmente e' gia' in esecuzione"
 
 #: ../../../src/ui.cpp:202
 #, c-format
 msgid "This transaction is over the size limit.  You can still send it for a fee of %s, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?"
-msgstr "Questo trasferimento è oltre le dimensioni massime. Puoi comunque inviarlo per un costo aggiuntivo di %s, che andrà ai nodi che effettueranno il processo della tua operazione e che supportano il network. Vuoi pagare il costo aggiuntivo?"
+msgstr "Questo trasferimento supera le dimensioni massime. Puoi comunque inviarlo per un costo aggiuntivo di %s, che andrà ai nodi che effettueranno il processo della tua operazione e che supportano il network. Vuoi pagare il costo aggiuntivo?"
 
 #: ../../../src/ui.cpp:301
 msgid "Status"
@@ -57,7 +57,7 @@ msgstr "Aperto fino a %s"
 #: ../../../src/ui.cpp:519
 #, c-format
 msgid "%d/offline?"
-msgstr "%d/fuorilinea?"
+msgstr "%d/disconnesso?"
 
 #: ../../../src/ui.cpp:521
 #, c-format
@@ -76,7 +76,7 @@ msgstr "Generato"
 #: ../../../src/ui.cpp:616
 #, c-format
 msgid "Generated (%s matures in %d more blocks)"
-msgstr "Generate (%s matureranno in %d altri blocchi)"
+msgstr "Generato (%s matureranno in %d altri blocchi)"
 
 #: ../../../src/ui.cpp:620
 msgid "Generated - Warning: This block was not received by any other nodes and will probably not be accepted!"
@@ -118,7 +118,7 @@ msgstr "     %d connessioni     %d blocchi     %d trasferimenti"
 #: ../../../src/ui.cpp:1163
 #: ../../../src/ui.cpp:2527
 msgid "New Receiving Address"
-msgstr "Nuovo indirizzo ricevente"
+msgstr "Nuovo indirizzo di ricezione"
 
 #: ../../../src/ui.cpp:1164
 #: ../../../src/ui.cpp:2528
@@ -127,7 +127,7 @@ msgid ""
 "\n"
 "Label"
 msgstr ""
-"E' una buona abitudine usare un nuovo indirizzo per ogni pagamento che ricevuto.\n"
+"Si dovrebbe usare un nuovo indirizzo per ogni pagamento che ricevi.\n"
 "\n"
 "Label"
 
@@ -137,17 +137,17 @@ msgstr "<b>Stato:</b> "
 
 #: ../../../src/ui.cpp:1238
 msgid ", has not been successfully broadcast yet"
-msgstr ", non è ancora stato diffuso correttamente"
+msgstr ", non è ancora stato trasmesso correttamente"
 
 #: ../../../src/ui.cpp:1240
 #, c-format
 msgid ", broadcast through %d node"
-msgstr ", diffusione attraverso %d nodo"
+msgstr ", trasmissione attraverso %d nodo"
 
 #: ../../../src/ui.cpp:1242
 #, c-format
 msgid ", broadcast through %d nodes"
-msgstr ", diffusione attraverso %d nodi"
+msgstr ", trasmissione attraverso %d nodi"
 
 #: ../../../src/ui.cpp:1246
 msgid "<b>Date:</b> "
@@ -164,7 +164,7 @@ msgstr "<b>Da:</b> "
 
 #: ../../../src/ui.cpp:1278
 msgid "unknown"
-msgstr "sconoscuto"
+msgstr "sconosciuto"
 
 #: ../../../src/ui.cpp:1279
 #: ../../../src/ui.cpp:1303
@@ -204,7 +204,7 @@ msgstr "<b>Debito:</b> "
 
 #: ../../../src/ui.cpp:1384
 msgid "<b>Transaction fee:</b> "
-msgstr "<b>Trasferimento costo:</b> "
+msgstr "<b>Costo del trasferimento :</b> "
 
 #: ../../../src/ui.cpp:1400
 msgid "<b>Net amount:</b> "
@@ -216,7 +216,7 @@ msgstr "Messaggio:"
 
 #: ../../../src/ui.cpp:1409
 msgid "Comment:"
-msgstr ""
+msgstr "Commento"
 
 #: ../../../src/ui.cpp:1412
 msgid "Generated coins must wait 120 blocks before they can be spent.  When you generated this block, it was broadcast to the network to be added to the block chain.  If it fails to get into the chain, it will change to \"not accepted\" and not be spendable.  This may occasionally happen if another node generates a block within a few seconds of yours."
@@ -224,7 +224,7 @@ msgstr "Le monete generate devono aspettare 120 blocchi prima di poter essere sp
 
 #: ../../../src/ui.cpp:1592
 msgid "Cannot write autostart/bitcoin.desktop file"
-msgstr ""
+msgstr "Impossibile creare il file autostart/bitcoin.desktop"
 
 #: ../../../src/ui.cpp:1628
 msgid "Main"
@@ -232,7 +232,7 @@ msgstr "Principale"
 
 #: ../../../src/ui.cpp:1636
 msgid "&Start Bitcoin on window system startup"
-msgstr "A&vvia Bitcoin all'avvio del sistema"
+msgstr "&Avvia Bitcoin all'avvio del sistema"
 
 #: ../../../src/ui.cpp:1643
 msgid "&Minimize on close"
@@ -261,11 +261,11 @@ msgstr "L'ammontare è andato oltre i tuoi capitali  "
 
 #: ../../../src/ui.cpp:1907
 msgid "Total exceeds your balance when the "
-msgstr "Il totale va oltre i tuoi capitali quando il "
+msgstr "Il totale supera il tuo bilancio quando il "
 
 #: ../../../src/ui.cpp:1907
 msgid " transaction fee is included  "
-msgstr " il costo trasferimento è incluso  "
+msgstr " il costo del trasferimento è incluso  "
 
 #: ../../../src/ui.cpp:1925
 msgid "Payment sent  "
@@ -277,7 +277,7 @@ msgstr "Pagamento inviato  "
 #: ../../../src/ui.cpp:2227
 #: ../../../src/main.cpp:3999
 msgid "Sending..."
-msgstr "Inviando..."
+msgstr "Invio in corso..."
 
 #: ../../../src/ui.cpp:1942
 msgid "Invalid address  "
@@ -329,7 +329,7 @@ msgstr "Ricezione chiave pubblica..."
 
 #: ../../../src/ui.cpp:2182
 msgid "Recipient is not accepting transactions sent by IP address"
-msgstr ""
+msgstr "Il destinatario non accetta transazioni effettuate tramite questo IP"
 
 #: ../../../src/ui.cpp:2184
 msgid "Transfer was not accepted"
@@ -341,12 +341,12 @@ msgstr "Risposta non valida ricevuta"
 
 #: ../../../src/ui.cpp:2208
 msgid "Creating transaction..."
-msgstr "Creazione trasferimento..."
+msgstr "Creo transazione..."
 
 #: ../../../src/ui.cpp:2220
 #, c-format
 msgid "This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds"
-msgstr ""
+msgstr "Questa transazione richiede un costo di transazione di almeno %s a causa della sua quantità, complessità, o per l'uso di fondi recentemente ricevuti"
 
 #: ../../../src/ui.cpp:2222
 msgid "Transaction creation failed"
@@ -362,7 +362,7 @@ msgstr "Connessione persa, trasferimento cancellato"
 
 #: ../../../src/ui.cpp:2253
 msgid "Sending payment..."
-msgstr "Inviando pagamento..."
+msgstr "Invio del pagamento..."
 
 #: ../../../src/ui.cpp:2259
 msgid "The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here."
@@ -378,9 +378,9 @@ msgid ""
 "The transaction is recorded and will credit to the recipient,\n"
 "but the comment information will be blank."
 msgstr ""
-"Il pagamento è inviato, ma il ricevente non è stato in grado di verificarlo.\n"
-"Il trasferimento è registrato e costerà sarà accreditato al ricevente,\n"
-"ma il commento verrà mostrato come vuoto."
+"Il pagamento è stato inviato, ma il destinatario non è stato in grado di verificarlo.\n"
+"Il trasferimento è registrato e sarà accreditato al destinatario,\n"
+"ma il commento informativo verrà mostrato come vuoto."
 
 #: ../../../src/ui.cpp:2295
 msgid "Payment was sent, but an invalid response was received"
@@ -451,12 +451,12 @@ msgid "&Send Bitcoins"
 msgstr "&Apri Bitcoin"
 
 #: ../../../src/ui.cpp:2683
-msgid "O&ptions..."
-msgstr "O&pzioni..."
+msgid "&Options..."
+msgstr "&Opzioni..."
 
 #: ../../../src/ui.cpp:2686
 #: ../../../src/uibase.cpp:25
-msgid "E&xit"
+msgid "&Exit"
 msgstr "E&sci"
 
 #: ../../../src/ui.cpp:2902
@@ -470,11 +470,11 @@ msgstr "Attenzione: c'è poco spazio sul disco  "
 #: ../../../src/main.cpp:3992
 #, c-format
 msgid "Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds  "
-msgstr ""
+msgstr "Errore: Questa transazione richiede un costo di transazione di almeno %s a causa della sua quantità, complessità, o per l'uso di fondi recentemente ricevuti"
 
 #: ../../../src/main.cpp:3994
 msgid "Error: Transaction creation failed  "
-msgstr "Errore: La creazione del trasferimento è fallito  "
+msgstr "Errore: Creazione del trasferimento fallito  "
 
 #: ../../../src/main.cpp:4003
 msgid "Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here."
@@ -492,7 +492,7 @@ msgstr "Indirizzo bitcoin non valido"
 #: ../../../src/rpc.cpp:1802
 #, c-format
 msgid "To use the %s option"
-msgstr ""
+msgstr "Usare l'opzione %s"
 
 #: ../../../src/rpc.cpp:1804
 #, c-format
@@ -501,6 +501,9 @@ msgid ""
 "in the configuration file: %s\n"
 "If the file does not exist, create it with owner-readable-only file permissions.\n"
 msgstr ""
+"Attenzione: %s, devi impostare rpcpassword=<password>\n "
+"nel file di configurazione: %s\n"
+"Se questo file non esiste, puoi crearlo come un file di sola lettura"
 
 #: ../../../src/rpc.cpp:1972
 #, c-format
@@ -508,15 +511,18 @@ msgid ""
 "You must set rpcpassword=<password> in the configuration file:\n"
 "%s\n"
 "If the file does not exist, create it with owner-readable-only file permissions."
-msgstr ""
+msgstr "" 
+"Devi settare rpcpassword=<password> nel file di configurazione:\n"
+"%s\n"
+"Se questo file non esiste, puoi crearlo come un file di sola lettura"
 
 #: ../../../src/util.cpp:865
 msgid "Warning: Please check that your computer's date and time are correct.  If your clock is wrong Bitcoin will not work properly."
-msgstr ""
+msgstr "Attenzione: Controlla che data/ora del tuo computer siano corrette. Se il tuo orologio è sbagliato bitcoin non funzionerà correttamente"
 
 #: ../../../src/util.cpp:898
 msgid "-beta"
-msgstr ""
+msgstr "-beta"
 
 #: ../../../src/uibase.cpp:28
 msgid "&File"
@@ -562,7 +568,7 @@ msgstr " &Copia nella Clipboard "
 
 #: ../../../src/uibase.cpp:93
 msgid "Balance:"
-msgstr "Capitali:"
+msgstr "Bilancio:"
 
 #: ../../../src/uibase.cpp:109
 msgid " All"
@@ -582,7 +588,7 @@ msgstr " In lavorazione"
 
 #: ../../../src/uibase.cpp:130
 msgid "All Transactions"
-msgstr "Tutte le operazioni"
+msgstr "Tutte le transazioni"
 
 #: ../../../src/uibase.cpp:141
 msgid "Sent/Received"
@@ -608,7 +614,7 @@ msgstr "OK"
 
 #: ../../../src/uibase.cpp:345
 msgid "&Start Bitcoin on system startup"
-msgstr "A&vvia Bitcoin all'avvio del sistema"
+msgstr "&Avvia Bitcoin all'avvio del sistema"
 
 #: ../../../src/uibase.cpp:348
 msgid "&Minimize to the tray instead of the taskbar"
@@ -616,11 +622,11 @@ msgstr "&Minimizza nella tray invece che nella barra"
 
 #: ../../../src/uibase.cpp:351
 msgid "Map port using &UPnP"
-msgstr ""
+msgstr "Imposta le porte del firewall utilizzando &UPnP"
 
 #: ../../../src/uibase.cpp:354
-msgid "M&inimize to the tray on close"
-msgstr "M&inimizza nella tray alla chiusura"
+msgid "&Minimize to the tray on close"
+msgstr "&Minimizza nella tray alla chiusura"
 
 #: ../../../src/uibase.cpp:360
 msgid "&Connect through socks4 proxy: "
@@ -1003,7 +1009,7 @@ msgstr "Il tuo indirizzo Bitcoin"
 #~ "trasferimenti"
 
 #~ msgid "&Limit coin generation to"
-#~ msgstr "&Limita la generazione moneta a"
+#~ msgstr "&Limita la generazione di Bitcoin a"
 
 #~ msgid "processors"
 #~ msgstr "processori"
